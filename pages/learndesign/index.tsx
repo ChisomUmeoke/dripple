@@ -268,6 +268,7 @@ const LearnDesign = () => {
                         <div className="grid gap-2 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/video.svg" />
                             <p className='font-bold'>Certification</p>
+
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 You will be awarded a signed certificate on
                                 completion of your course, and a badge to add to

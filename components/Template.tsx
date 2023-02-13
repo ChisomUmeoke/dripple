@@ -12,11 +12,7 @@ const Template = () => {
                 <div className="flex justify-between p-4 mt-3">
                     <div>
                         <ul className="grid grid-flow-col gap-8">
-                            <img
-                                width="80"
-                                height="80"
-                                src="/Images/logo.png"
-                            />
+                           <p className='text-md text-pink-500 font-mono overline decoration-wavy'>Dripple</p>
                             <li className="text-[0.95em] text-gray-500 font-medium">
                                 <a href="">Inspiration</a>
                             </li>
@@ -36,29 +32,20 @@ const Template = () => {
                     </div>
                     <div className="">
                         <ul className="grid grid-flow-col gap-6">
-                            <input
-                                type="text"
-                                className="bg-gray-100 w-[7em] text-md border rounded outline-0 p-1"
-                                placeholder="Search"
-                            ></input>
-                            <li className="">
-                                <a className="" href="">
-                                    <img
-                                        width="25"
-                                        height="15"
-                                        src="/Images/mail.svg"
-                                    />
-                                </a>
-                            </li>
-                            <p className="bg-blue-700 rounded-3xl p-3 w-[2em] text-white font-medium">
-                                C
-                            </p>
+                            <img src ="/Images/search.svg" className='mt-1'/>
                             <button
                                 type="button"
-                                className="bg-pink-500 w-[5em] border text-white  text-sm font-medium rounded-md outline-0 p-1 w-[7em] h-[3em]"
+                                className="border w-[5em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
                             >
                                 {' '}
-                                Upload
+                                Signin
+                            </button>
+                            <button
+                                type="button"
+                                className="bg-pink-500 w-[5em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
+                            >
+                                {' '}
+                                Signup
                             </button>
                         </ul>
                     </div>
