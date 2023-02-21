@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Login from './login'
+
+import LearnDesign from './learndesign'
 
 
 export default function Home() {
   return (
     <>
      <main>
-      <Login/>
+      <LearnDesign/>
       </main>
     </>
   )

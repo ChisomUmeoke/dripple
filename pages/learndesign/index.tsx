@@ -247,7 +247,7 @@ const LearnDesign = () => {
                     <div className="grid grid-cols-4 gap-5 justify-between mt-[3em]">
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/key.svg" />
-                            <p className='font-bold'>Expert educators</p>
+                            <p className="font-bold">Expert educators</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 You’ll learn from the best in the design
                                 industry; join MDS and the former hiring manager
@@ -256,7 +256,7 @@ const LearnDesign = () => {
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/users.svg" />
-                            <p className='font-bold'>Live mentorship</p>
+                            <p className="font-bold">Live mentorship</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 You’ll join a small group of designers for
                                 weekly live & interactive mentorship sessions.
@@ -267,7 +267,7 @@ const LearnDesign = () => {
 
                         <div className="grid gap-2 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/video.svg" />
-                            <p className='font-bold'>Certification</p>
+                            <p className="font-bold">Certification</p>
 
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 You will be awarded a signed certificate on
@@ -277,7 +277,7 @@ const LearnDesign = () => {
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/book-open.svg" />
-                            <p className='font-bold'> Project-based learning</p>
+                            <p className="font-bold"> Project-based learning</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 We believe product design is best learned by
                                 doing. Students will get briefs and assignments
@@ -287,7 +287,10 @@ const LearnDesign = () => {
 
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7 ">
                             <img src="/Images/users.svg" />
-                            <p className='font-bold'> Access to online community group</p>
+                            <p className="font-bold">
+                                {' '}
+                                Access to online community group
+                            </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 Connect, network and share your ideas with
                                 designers from all around the world in an
@@ -297,7 +300,9 @@ const LearnDesign = () => {
 
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/video.svg" />
-                            <p className='font-bold'>Permanent access to course material</p>
+                            <p className="font-bold">
+                                Permanent access to course material
+                            </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 Gain permanent access to video content, PDF
                                 worksheets, templates, and reference material to
@@ -306,7 +311,10 @@ const LearnDesign = () => {
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/book-open.svg" />
-                            <p  className='font-bold w-[12em]'  > Connect with hiring companies</p>
+                            <p className="font-bold w-[12em]">
+                                {' '}
+                                Connect with hiring companies
+                            </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 Get in front of Dribbble's vast network of
                                 hiring managers who work for the most design
@@ -315,7 +323,10 @@ const LearnDesign = () => {
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <img src="/Images/key.svg" />
-                            <p className='font-bold'> A Dribbble Pro subscription</p>
+                            <p className="font-bold">
+                                {' '}
+                                A Dribbble Pro subscription
+                            </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 With your course, you get one full year of
                                 Dribbble Pro, which allows you to showcase your
@@ -325,6 +336,129 @@ const LearnDesign = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="grid gap-[4em] ml-[5em]">
+                <p className="font-bold text-4xl mt-[4em]">
+                    What our students are saying
+                </p>
+                <div className="grid grid-cols-3 justify-center">
+                    <div>
+                        <p className="text-xl italic w-[16em] text-gray-700">
+                            This is a great opportunity to work online and
+                            in-depth with your design heroes. The instructors
+                            are world-class, the community is amazing, and we’re
+                            inspired to add to our portfolios every week.
+                        </p>
+                        <div className="flex gap-3 mt-8">
+                            <img src="/Images/studentI.png" />
+                            <div>
+                                <p className="text-md">Harley Berry</p>
+                                <p className="text-sm text-gray-700">
+                                    New York, NY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className="text-xl italic w-[16em] text-gray-700">
+                            Dribbble courses are always incredibly informative
+                            for me. It was fascinating to hear from industry
+                            experts and gain insight into their experience.
+                        </p>
+                        <div className="flex gap-3 mt-8">
+                            <img src="/Images/studentII.png" />
+                            <div>
+                                <p className="text-md">Harley Berry</p>
+                                <p className="text-sm text-gray-700">
+                                    New York, NY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        {' '}
+                        <p className="text-xl italic w-[16em] text-gray-700">
+                            I found that the hands-on mentorship provides
+                            transferrable skills, relevant advice, advanced
+                            knowledge, and practical experience. This course has
+                            been a valuable experience for my career.{' '}
+                        </p>
+                        <div className="flex gap-3 mt-8">
+                            <img src="/Images/studentiii.png" />
+                            <div>
+                                <p className="text-md">Harley Berry</p>
+                                <p className="text-sm text-gray-700">
+                                    New York, NY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="m-[5em] grid gap-3">
+                <p className="font-bold text-4xl">Workshops & Free Webinars</p>
+                <p className="text-xl w-[33em] text-gray-900">
+                    Level up your design skills with our live and highly
+                    interactive workshops —featuring must-have insights from
+                    your favorite design leaders
+                </p>
+                <div className="grid grid-cols-2 justify-between gap-9 mt-8">
+                    <div className="grid gap-2">
+                        <img
+                            src="/Images/workshop1.png"
+                            width="98%"
+                            className="rounded-2xl"
+                        />
+                        <p className="text-[0.95em] w-[27em] leading-relaxed">
+                            It’s time to start investing as much effort into
+                            your business as you do with your creations. Editor
+                            X and Dribbble are teaming up with web designer and
+                            entrepreneur Brad Hussey to teach you how to land
+                            your ideal web design clients, at scale
+                        </p>
+                        <div className="flex justify-around mb-3 w-[21em]">
+                            <span className="flex">
+                                <img src="Images/award.svg" width="20%" />
+                                <p className="text-sm ml-[0.24em]">Workshop</p>
+                            </span>
+                            <span className="flex">
+                                <img src="Images/calendar.svg" width="8%" />{' '}
+                                <p className=" text-sm ml-[0.14em]">
+                                    Thursday, February 26, 2023
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="grid">
+                        <img
+                            src="/Images/workshop.png"
+                            width="98%"
+                            className="rounded-2xl mb-6"
+                        />
+                        <p className="text-[0.95em] w-[27em] leading-relaxed mb-6">
+                            Join Aaron Draplin for an interactive, virtual
+                            workshop you won’t want to miss. With two available
+                            sessions—the first tackling the DDC’s design
+                            optimization workflow and the second logo design the
+                            DDC way, you’ll have the opportunity to gain design
+                            know-how that will help you make your creative work
+                            more efficient, dialed-in, and impactful.
+                        </p>
+                        <div className="flex justify-around mb-3 w-[21em]">
+                            <span className="flex">
+                                <img src="Images/award.svg" width="20%" />
+                                <p className="text-sm ml-[0.24em]">Workshop</p>
+                            </span>
+                            <span className="flex">
+                                <img src="Images/calendar.svg" width="9%" />{' '}
+                                <p className=" text-sm ml-[0.14em]">
+                                    Thursday, February 23, 2023
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>{' '}
             </div>
         </>
     );
