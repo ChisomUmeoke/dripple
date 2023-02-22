@@ -1,5 +1,6 @@
 import React from 'react';
 import Template from '../../components/Template';
+import Image from 'next/image';
 
 const LearnDesign = () => {
     const Mentors = [
@@ -8,21 +9,21 @@ const LearnDesign = () => {
             name: 'Andrew Daniels',
             position: 'Head of Design @Flutterflow',
             note: '"Mentoring allows me to pass off the 9 years of experience and over 100 projects I have worked on to other people who want to learn how to solve problems through design. This mentorship is vastly important for new designers, learning what it is actually like in the industry instead of just reading from a book or putting together a sample project"',
-            img: 'Images/andrew.webp'
+            img: '/Images/andrew.webp'
         },
         {
             id: '2',
             name: 'Iker Fernandez',
             position: 'Lead Product Designer @Payfit',
             note: '"During my career, I have been fortunate to be mentored by people that had a huge positive impact professionally, but that also helped me grow as a person. I hope I can help others learn and reach their goals"',
-            img: 'Images/iker.webp'
+            img: '/Images/iker.webp'
         },
         {
             id: '3',
             name: 'Allison Zadrozny',
             position: 'Design Lead @Bonsai.io',
             note: '”My mentors helped me to have confidence in both the way I think about design and my execution skills. I love that, in this place of my career, I have the opportunity to uplift others and help them distill their style - and, learn something in turn!”',
-            img: 'Images/allison.webp'
+            img: '/Images/allison.webp'
         }
     ];
     return (
@@ -45,7 +46,7 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between ml-[4em] mt-[4em]">
+            <div className="flex justify-around  mt-[4em]">
                 <div className="w-[45%]">
                     <h1 className="font-bold text-7xl mb-4">
                         Learn design online with industry leaders
@@ -62,9 +63,11 @@ const LearnDesign = () => {
                     </div>
                 </div>
                 <div className="">
-                    <img
+                    <Image
+                        height="10"
+                        width="450"
                         src="/Images/hiring.webp"
-                        width="80%"
+                        alt=""
                         className="border rounded-3xl"
                     />
                 </div>
@@ -72,7 +75,7 @@ const LearnDesign = () => {
             <p className="ml-[5em] mt-[5em] text-[#4d44c6] text-[12px] font-bold">
                 CERTIFIED COURSES{' '}
             </p>
-            <div className=" ml-[4em] mt-[4em] flex justify-between">
+            <div className=" mt-[4em] flex justify-around">
                 <div className="w-[40em]">
                     <p className="w-[12em] font-bold text-5xl mb-4">
                         Learn Product Design in 16 weeks
@@ -85,7 +88,7 @@ const LearnDesign = () => {
                         practices, build an interview-ready portfolio, and get
                         connected to a vast network of hiring managers.
                     </p>
-                    <div className="w-[45em]  grid grid-cols-3  gap-4 mt-[3em]">
+                    <div className="lg:w-[45em]  grid grid-cols-3  gap-4 mt-[3em]">
                         <p className="text-[#4d44c6]  font-bold">
                             Flexible learning<br></br>
                             <span className="text-gray-700 text-sm font-normal">
@@ -115,9 +118,11 @@ const LearnDesign = () => {
                     </div>
                 </div>
                 <div>
-                    <img
+                    <Image
+                        height="10"
+                        width="370"
                         src="/Images/certifiedcourse.jpg"
-                        width="80%"
+                        alt=""
                         className="border rounded-full"
                     />
                 </div>
@@ -136,13 +141,15 @@ const LearnDesign = () => {
                 <div>
                     <div className="flex justify-between border rounded-xl border-gray-300 mb-[5em] p-6 w-[35em]">
                         <div className="">
-                            <img
+                            <Image
                                 src="/Images/ready.jpg"
+                                height="10"
+                                width="270"
+                                alt=""
                                 className="border h-[10em]  w-[16em] rounded-3xl"
                             />
                         </div>
                         <div>
-                            {' '}
                             <div className="flex justify-between mb-3">
                                 <p className="font-bold text-xl w-[8em]">
                                     Introduction to Product Design
@@ -153,16 +160,23 @@ const LearnDesign = () => {
                             </div>
                             <div className="flex justify-between mb-3 w-[11em]">
                                 <span className="flex">
-                                    <img src="Images/award.svg" width="20%" />
+                                    <Image
+                                        src="Images/award.svg"
+                                        height="10"
+                                        width="18"
+                                        alt=""
+                                    />
                                     <p className="text-gray-700 text-sm ml=4">
                                         info Session
                                     </p>
                                 </span>
                                 <span className="flex">
-                                    <img
+                                    <Image
                                         src="Images/calendar.svg"
-                                        width="30%"
-                                    />{' '}
+                                        height="10"
+                                        width="18"
+                                        alt=""
+                                    />
                                     <p className="text-gray-700 text-sm">
                                         1 hour
                                     </p>
@@ -215,21 +229,23 @@ const LearnDesign = () => {
                 </div>
 
                 <div className="mt-[5em] flex justify-between">
-                    {' '}
                     {Mentors.map((mentor) => (
                         <div>
-                            {' '}
-                            <img src={mentor.img} width="90%" />{' '}
+                            <Image
+                                src={mentor.img}
+                                height="10"
+                                width="370"
+                                alt=""
+                            />
                             <p className="my-2 font-bold text-xl">
-                                {' '}
-                                {mentor.name}{' '}
-                            </p>{' '}
-                            <p className="my-2 text-sm">{mentor.position}</p>{' '}
+                                {mentor.name}
+                            </p>
+                            <p className="my-2 text-sm">{mentor.position}</p>
                             <p className="text-[#dad9f2] w-[21em]">
                                 {mentor.note}
-                            </p>{' '}
+                            </p>
                         </div>
-                    ))}{' '}
+                    ))}
                 </div>
                 <div className="grid gap-4 mt-[8em]">
                     <p className="text-[#dad9f2] text-[12px] font-bold">
@@ -246,7 +262,12 @@ const LearnDesign = () => {
                     </p>
                     <div className="grid grid-cols-4 gap-5 justify-between mt-[3em]">
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/key.svg" />
+                            <Image
+                                src="/Images/key.svg"
+                                height="10"
+                                width="20"
+                                alt=""
+                            />
                             <p className="font-bold">Expert educators</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 You’ll learn from the best in the design
@@ -255,7 +276,12 @@ const LearnDesign = () => {
                             </p>
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/users.svg" />
+                            <Image
+                                src="/Images/users.svg"
+                                height="10"
+                                width="20"
+                                alt=""
+                            />
                             <p className="font-bold">Live mentorship</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 You’ll join a small group of designers for
@@ -266,7 +292,12 @@ const LearnDesign = () => {
                         </div>
 
                         <div className="grid gap-2 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/video.svg" />
+                            <Image
+                                src="/Images/video.svg"
+                                height="10"
+                                width="20"
+                                alt=""
+                            />
                             <p className="font-bold">Certification</p>
 
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
@@ -276,7 +307,12 @@ const LearnDesign = () => {
                             </p>
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/book-open.svg" />
+                            <Image
+                                height="10"
+                                width="20"
+                                src="/Images/book-open.svg"
+                                alt=""
+                            />
                             <p className="font-bold"> Project-based learning</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
                                 We believe product design is best learned by
@@ -286,9 +322,13 @@ const LearnDesign = () => {
                         </div>
 
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7 ">
-                            <img src="/Images/users.svg" />
+                            <Image
+                                height="10"
+                                width="20"
+                                src="/Images/users.svg"
+                                alt=""
+                            />
                             <p className="font-bold">
-                                {' '}
                                 Access to online community group
                             </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
@@ -299,7 +339,12 @@ const LearnDesign = () => {
                         </div>
 
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/video.svg" />
+                            <Image
+                                height="10"
+                                width="20"
+                                alt=""
+                                src="/Images/video.svg"
+                            />
                             <p className="font-bold">
                                 Permanent access to course material
                             </p>
@@ -310,9 +355,13 @@ const LearnDesign = () => {
                             </p>
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/book-open.svg" />
+                            <Image
+                                height="10"
+                                width="20"
+                                alt=""
+                                src="/Images/book-open.svg"
+                            />
                             <p className="font-bold w-[12em]">
-                                {' '}
                                 Connect with hiring companies
                             </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
@@ -322,9 +371,13 @@ const LearnDesign = () => {
                             </p>
                         </div>
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
-                            <img src="/Images/key.svg" />
+                            <Image
+                                height="10"
+                                width="20"
+                                alt=""
+                                src="/Images/key.svg"
+                            />
                             <p className="font-bold">
-                                {' '}
                                 A Dribbble Pro subscription
                             </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
@@ -350,7 +403,12 @@ const LearnDesign = () => {
                             inspired to add to our portfolios every week.
                         </p>
                         <div className="flex gap-3 mt-8">
-                            <img src="/Images/studentI.png" />
+                            <Image
+                                height="10"
+                                width="55"
+                                alt=""
+                                src="/Images/studentI.png"
+                            />
                             <div>
                                 <p className="text-md">Harley Berry</p>
                                 <p className="text-sm text-gray-700">
@@ -367,7 +425,12 @@ const LearnDesign = () => {
                             experts and gain insight into their experience.
                         </p>
                         <div className="flex gap-3 mt-8">
-                            <img src="/Images/studentII.png" />
+                            <Image
+                                src="/Images/studentII.png"
+                                height="10"
+                                width="55"
+                                alt=""
+                            />
                             <div>
                                 <p className="text-md">Harley Berry</p>
                                 <p className="text-sm text-gray-700">
@@ -377,15 +440,19 @@ const LearnDesign = () => {
                         </div>
                     </div>
                     <div>
-                        {' '}
                         <p className="text-xl italic w-[16em] text-gray-700">
                             I found that the hands-on mentorship provides
                             transferrable skills, relevant advice, advanced
                             knowledge, and practical experience. This course has
-                            been a valuable experience for my career.{' '}
+                            been a valuable experience for my career.
                         </p>
                         <div className="flex gap-3 mt-8">
-                            <img src="/Images/studentiii.png" />
+                            <Image
+                                src="/Images/studentiii.png"
+                                height="10"
+                                width="55"
+                                alt=""
+                            />
                             <div>
                                 <p className="text-md">Harley Berry</p>
                                 <p className="text-sm text-gray-700">
@@ -405,9 +472,11 @@ const LearnDesign = () => {
                 </p>
                 <div className="grid grid-cols-2 justify-between gap-9 mt-8">
                     <div className="grid gap-2">
-                        <img
+                        <Image
                             src="/Images/workshop1.png"
-                            width="98%"
+                            height="10"
+                            width="500"
+                            alt=""
                             className="rounded-2xl"
                         />
                         <p className="text-[0.95em] w-[27em] leading-relaxed">
@@ -417,23 +486,56 @@ const LearnDesign = () => {
                             entrepreneur Brad Hussey to teach you how to land
                             your ideal web design clients, at scale
                         </p>
+
                         <div className="flex justify-around mb-3 w-[21em]">
                             <span className="flex">
-                                <img src="Images/award.svg" width="20%" />
+                                <Image
+                                    src="Images/award.svg"
+                                    height="10"
+                                    width="18"
+                                    alt=""
+                                    className=" mt-[-1.6em]"
+                                />
                                 <p className="text-sm ml-[0.24em]">Workshop</p>
                             </span>
                             <span className="flex">
-                                <img src="Images/calendar.svg" width="8%" />{' '}
+                                <Image
+                                    src="Images/calendar.svg"
+                                    height="10"
+                                    width="18"
+                                    alt=""
+                                    className=" mt-[-1.6em]"
+                                />
                                 <p className=" text-sm ml-[0.14em]">
                                     Thursday, February 26, 2023
                                 </p>
                             </span>
                         </div>
+                        <div className="">
+                        <ul className="flex">
+                              <button
+                                type="button"
+                                className="border w-[8em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1 mr-8 h-[2.5em]"
+                            >
+                                {' '}
+                                Register Now
+                            </button>
+                            <button
+                                type="button"
+                                className="bg-pink-500 w-[8em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
+                            >
+                                {' '}
+                                Learn More
+                            </button>
+                        </ul>
+                    </div>
                     </div>
                     <div className="grid">
-                        <img
+                        <Image
                             src="/Images/workshop.png"
-                            width="98%"
+                            height="10"
+                            width="500"
+                            alt=""
                             className="rounded-2xl mb-6"
                         />
                         <p className="text-[0.95em] w-[27em] leading-relaxed mb-6">
@@ -447,18 +549,78 @@ const LearnDesign = () => {
                         </p>
                         <div className="flex justify-around mb-3 w-[21em]">
                             <span className="flex">
-                                <img src="Images/award.svg" width="20%" />
+                                <Image
+                                    src="Images/award.svg"
+                                    height="10"
+                                    width="18"
+                                    alt=""
+
+                                />
                                 <p className="text-sm ml-[0.24em]">Workshop</p>
                             </span>
                             <span className="flex">
-                                <img src="Images/calendar.svg" width="9%" />{' '}
+                                <Image
+                                    height="10"
+                                    width="18"
+                                    alt=""
+                                    src="Images/calendar.svg"
+                                />
                                 <p className=" text-sm ml-[0.14em]">
                                     Thursday, February 23, 2023
                                 </p>
                             </span>
                         </div>
+                        <div className="mt-8">
+                        <ul className="flex">
+                              <button
+                                type="button"
+                                className="border w-[8em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1 mr-8 h-[2.5em]"
+                            >
+                                {' '}
+                                Register Now
+                            </button>
+                            <button
+                                type="button"
+                                className="bg-pink-500 w-[8em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
+                            >
+                                {' '}
+                                Learn More
+                            </button>
+                        </ul>
                     </div>
-                </div>{' '}
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-around  mt-[9em]">
+                <div className="w-[49%]">
+                    <h1 className="font-bold text-4xl mb-4">
+                    Have any questions?
+                    </h1>
+                    <p className="w-[] text-gray-700 text-md leading-relaxed">
+                    We’re here to help. Get in touch below to ask us anything about Dribbble’s course offerings
+                    </p>
+
+                    <div className='grid gap-3 rounded-xl bg-slate-100 p-[2em] mt-8'>
+                        <p className='font-bold text-xl'>Send us a message</p>
+                        <p className='text-gray-700 text-sm '>A Dribbble Education team member is available to answer any questions you have about the course.</p><div className="mt-4">
+                       <div><button className="bg-pink-500 w-[10em] h-[3.1em] text-sm font-bold p-1 rounded-xl text-white">
+                            Get in touch
+                        </button>
+                        <button className="bg-slate-200 w-[12em] ml-4 h-[3.1em] text-sm font-bold p-1 rounded-xl ">
+                            Speak with an Advisor
+                        </button></div>
+                    </div>
+                    </div>
+                </div>
+                <div className="">
+                    <Image
+                        height="10"
+                        width="450"
+                        src="/Images/message.png"
+                        alt=""
+
+                    />
+                </div>
             </div>
         </>
     );
