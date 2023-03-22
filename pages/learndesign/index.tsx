@@ -28,9 +28,9 @@ const LearnDesign = () => {
     ];
     return (
         <>
-            <Template />
+            {/*  <Template /> */}
             <div className="grid">
-                <div className="flex justify-between p-4 mt-9 mx-8 px-10">
+                <div className="flex justify-between lg:p-4 mt-9 mx-8 lg:px-10">
                     <div>
                         <ul className="grid grid-flow-col gap-8 overscroll-contain">
                             <li className="text-[0.90em] text-gray-500">
@@ -46,12 +46,12 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-around  mt-[4em]">
-                <div className="w-[45%]">
-                    <h1 className="font-bold text-7xl mb-4">
+            <div className=" lg:flex justify-around mt-[4em]">
+                <div className="lg:w-[45%] m-8">
+                    <h1 className="font-bold  text-4xl lg:text-7xl mb-4">
                         Learn design online with industry leaders
                     </h1>
-                    <p className="w-[75%] text-gray-700 text-xl leading-relaxed">
+                    <p className="lg:w-[75%] text-gray-700 text-xl leading-relaxed">
                         Ready to invest in your design career? Browse our
                         catalog of highly interactive, online design courses
                         taught by the best in the industry.
@@ -68,19 +68,19 @@ const LearnDesign = () => {
                         width="450"
                         src="/Images/hiring.webp"
                         alt=""
-                        className="border rounded-3xl"
+                        className="w-[90%] ml-[1em] lg:w-[28em] lg:m-[3em]  border rounded-3xl"
                     />
                 </div>
             </div>
             <p className="ml-[5em] mt-[5em] text-[#4d44c6] text-[12px] font-bold">
                 CERTIFIED COURSES{' '}
             </p>
-            <div className=" mt-[4em] flex justify-around">
-                <div className="w-[40em]">
-                    <p className="w-[12em] font-bold text-5xl mb-4">
+            <div className=" mt-[4em] lg:flex justify-around grid justify-center">
+                <div className="lg:w-[40em] m-8">
+                    <p className="w-[70%] lg:w-[12em] font-bold text-4xl lg:text-5xl mb-4">
                         Learn Product Design in 16 weeks
                     </p>
-                    <p className="w-[42em]  text-[17px] leading-7">
+                    <p className="lg:w-[42em]  text-[17px] leading-7">
                         Launch your Product Design career in just 16 weeks with
                         Dribbble’s zero-to-career-ready Product Design course!
                         Complete industry-relevant projects alongside a
@@ -88,7 +88,7 @@ const LearnDesign = () => {
                         practices, build an interview-ready portfolio, and get
                         connected to a vast network of hiring managers.
                     </p>
-                    <div className="lg:w-[45em]  grid grid-cols-3  gap-4 mt-[3em]">
+                    <div className="lg:w-[45em]  grid lg:grid-cols-3  gap-4 mt-[3em]">
                         <p className="text-[#4d44c6]  font-bold">
                             Flexible learning<br></br>
                             <span className="text-gray-700 text-sm font-normal">
@@ -123,12 +123,12 @@ const LearnDesign = () => {
                         width="370"
                         src="/Images/certifiedcourse.jpg"
                         alt=""
-                        className="border rounded-full"
+                        className="hidden lg:block border rounded-full"
                     />
                 </div>
             </div>
-            <div className="ml-[2em] mt-[7em] flex justify-around">
-                <div className="w-[35em]">
+            <div className="lg:ml-[2em] mt-[7em] lg:flex justify-around">
+                <div className="lg:w-[35em] m-8">
                     <h1 className="font-bold text-2xl mb-[0.5em]">
                         Not sure if you’re ready?
                     </h1>
@@ -139,18 +139,18 @@ const LearnDesign = () => {
                     </p>
                 </div>
                 <div>
-                    <div className="flex justify-between border rounded-xl border-gray-300 mb-[5em] p-6 w-[35em]">
+                    <div className="lg:flex justify-between border rounded-xl border-gray-300 mb-[5em] m-6 lg:m-2  w-[20em] p-6 lg:w-[35em]">
                         <div className="">
                             <Image
                                 src="/Images/ready.jpg"
                                 height="10"
                                 width="270"
                                 alt=""
-                                className="border h-[10em]  w-[16em] rounded-3xl"
+                                className="border h-[10em] lg:w-[16em] rounded-3xl"
                             />
                         </div>
                         <div>
-                            <div className="flex justify-between mb-3">
+                            <div className="flex justify-between mb-3 mt-3">
                                 <p className="font-bold text-xl w-[8em]">
                                     Introduction to Product Design
                                 </p>
@@ -190,7 +190,7 @@ const LearnDesign = () => {
                 </div>
             </div>
             <div className="bg-[#0d0c22] text-white px-[3em] py-[5em] text-[16px]">
-                <div className="grid gap-4 w-[41em]">
+                <div className="grid gap-4 lg:w-[41em]">
                     <p className="text-[14px] text-[#dad9f2] font-bold">
                         ABOUT OUR CERTIFIED COURSES
                     </p>
@@ -228,9 +228,9 @@ const LearnDesign = () => {
                     </p>
                 </div>
 
-                <div className="mt-[5em] flex justify-between">
+                <div className="mt-[5em] flex justify-between overflow-scroll lg:overflow-hidden">
                     {Mentors.map((mentor) => (
-                        <div>
+                        <div className='mr-9'>
                             <Image
                                 src={mentor.img}
                                 height="10"
@@ -254,13 +254,13 @@ const LearnDesign = () => {
                     <p className="text-3xl font-bold">
                         An immersive and interactive learning experience
                     </p>
-                    <p className="text-[#dad9f2] w-[47em]">
+                    <p className="text-[#dad9f2] lg:w-[47em]">
                         Our courses are built with students’ experience in mind
                         - proven learning principles, mentorship,
                         community-based plus a year of Dribbble Pro; unlocking
                         all the tools you need to transform your career.
                     </p>
-                    <div className="grid grid-cols-4 gap-5 justify-between mt-[3em]">
+                    <div className="grid lg:grid-cols-4 gap-5 justify-between mt-[3em]">
                         <div className="grid gap-3 rounded-lg bg-[rgba(255,255,255,0.06)] p-7">
                             <Image
                                 src="/Images/key.svg"
@@ -390,12 +390,12 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid gap-[4em] ml-[5em]">
-                <p className="font-bold text-4xl mt-[4em]">
+             <div className="grid gap-[4em] lg:ml-[5em]">
+                <p className=" ml-6 lg:ml-1 font-bold text-4xl mt-[4em] ">
                     What our students are saying
                 </p>
-                <div className="grid grid-cols-3 justify-center">
-                    <div>
+                <div className="grid lg:grid-cols-3 justify-center">
+                    <div className='mb-4'>
                         <p className="text-xl italic w-[16em] text-gray-700">
                             This is a great opportunity to work online and
                             in-depth with your design heroes. The instructors
@@ -418,7 +418,7 @@ const LearnDesign = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className='mb-4'>
                         <p className="text-xl italic w-[16em] text-gray-700">
                             Dribbble courses are always incredibly informative
                             for me. It was fascinating to hear from industry
@@ -463,23 +463,23 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="m-[5em] grid gap-3">
-                <p className="font-bold text-4xl">Workshops & Free Webinars</p>
-                <p className="text-xl w-[33em] text-gray-900">
+             <div className=" m-[1em] lg:m-[5em] grid gap-3">
+                <p className="font-bold mt-4 lg:mt-0 text-4xl">Workshops & Free Webinars</p>
+                <p className="text-xl lg:w-[33em] text-gray-900">
                     Level up your design skills with our live and highly
                     interactive workshops —featuring must-have insights from
                     your favorite design leaders
                 </p>
-                <div className="grid grid-cols-2 justify-between gap-9 mt-8">
+                <div className="grid lg:grid-cols-2 justify-between gap-9 mt-8">
                     <div className="grid gap-2">
                         <Image
                             src="/Images/workshop1.png"
                             height="10"
                             width="500"
                             alt=""
-                            className="rounded-2xl"
+                            className="w-[90%] rounded-2xl"
                         />
-                        <p className="text-[0.95em] w-[27em] leading-relaxed">
+                        <p className="text-[0.95em] lg:w-[27em] leading-relaxed">
                             It’s time to start investing as much effort into
                             your business as you do with your creations. Editor
                             X and Dribbble are teaming up with web designer and
@@ -487,14 +487,14 @@ const LearnDesign = () => {
                             your ideal web design clients, at scale
                         </p>
 
-                        <div className="flex justify-around mb-3 w-[21em]">
+                        <div className="flex justify-around mb-3 lg:w-[21em]">
                             <span className="flex">
                                 <Image
                                     src="Images/award.svg"
                                     height="10"
                                     width="18"
                                     alt=""
-                                    className=" mt-[-1.6em]"
+                                    className=" lg:mt-[-1.6em]"
                                 />
                                 <p className="text-sm ml-[0.24em]">Workshop</p>
                             </span>
@@ -504,7 +504,7 @@ const LearnDesign = () => {
                                     height="10"
                                     width="18"
                                     alt=""
-                                    className=" mt-[-1.6em]"
+                                    className=" lg:mt-[-1.6em]"
                                 />
                                 <p className=" text-sm ml-[0.14em]">
                                     Thursday, February 26, 2023
@@ -530,15 +530,15 @@ const LearnDesign = () => {
                         </ul>
                     </div>
                     </div>
-                    <div className="grid">
+                    <div className="grid mt-4 lg:mt-0">
                         <Image
                             src="/Images/workshop.png"
                             height="10"
                             width="500"
                             alt=""
-                            className="rounded-2xl mb-6"
+                            className="w-[90%] rounded-2xl mb-6"
                         />
-                        <p className="text-[0.95em] w-[27em] leading-relaxed mb-6">
+                        <p className="text-[0.95em] lg:w-[27em] leading-relaxed mb-6">
                             Join Aaron Draplin for an interactive, virtual
                             workshop you won’t want to miss. With two available
                             sessions—the first tackling the DDC’s design
@@ -556,7 +556,7 @@ const LearnDesign = () => {
                                     alt=""
 
                                 />
-                                <p className="text-sm ml-[0.24em]">Workshop</p>
+                                <p className="text-sm lg:ml-[0.24em]">Workshop</p>
                             </span>
                             <span className="flex">
                                 <Image
@@ -565,7 +565,7 @@ const LearnDesign = () => {
                                     alt=""
                                     src="Images/calendar.svg"
                                 />
-                                <p className=" text-sm ml-[0.14em]">
+                                <p className=" text-sm lg:ml-[0.14em]">
                                     Thursday, February 23, 2023
                                 </p>
                             </span>
@@ -591,7 +591,7 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-around  mt-[9em]">
+             <div className="lg:flex justify-around  mt-[9em]">
                 <div className="w-[49%]">
                     <h1 className="font-bold text-4xl mb-4">
                     Have any questions?
@@ -612,7 +612,7 @@ const LearnDesign = () => {
                     </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="hidden lg:block">
                     <Image
                         height="10"
                         width="450"

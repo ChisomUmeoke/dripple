@@ -5,6 +5,7 @@ const FindWork = () => {
     return (
         <>
             <Template />
+
             <div className="grid">
                 <div className="flex justify-between p-4 mt-9 mx-8 px-10">
                     <div>

@@ -8,8 +8,8 @@ import FindWork from '../pages/findwork';
 const Template = () => {
     return (
         <div className="sm:justify-around">
-            <div className="grid bg-white shadow">
-                <div className="flex justify-between p-4 mt-3">
+            <div className="grid">
+                <div className="flex bg-white shadow justify-between p-4 mt-3">
                     <div>
                         <ul className="grid grid-flow-col gap-8">
                            <p className='text-md text-pink-500 font-mono overline decoration-wavy'>Dripple</p>
