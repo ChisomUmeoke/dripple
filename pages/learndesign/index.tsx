@@ -82,7 +82,7 @@ const LearnDesign = () => {
                     </p>
                     <p className="lg:w-[42em]  text-[17px] leading-7">
                         Launch your Product Design career in just 16 weeks with
-                        Dribbble’s zero-to-career-ready Product Design course!
+                        Dribbble&apos;s zero-to-career-ready Product Design course!
                         Complete industry-relevant projects alongside a
                         handpicked mentor, master essential design tools and
                         practices, build an interview-ready portfolio, and get
@@ -130,7 +130,7 @@ const LearnDesign = () => {
             <div className="lg:ml-[2em] mt-[7em] lg:flex justify-around">
                 <div className="lg:w-[35em] m-8">
                     <h1 className="font-bold text-2xl mb-[0.5em]">
-                        Not sure if you’re ready?
+                        Not sure if you&apos;re ready?
                     </h1>
                     <p className="text-gray-700 text-sm font-normal leading-7">
                         Join our free info session and meet the team to get an
@@ -198,7 +198,7 @@ const LearnDesign = () => {
                         Learn alongside industry leading mentors
                     </p>
                     <p className="text-[#dad9f2] mb-7">
-                        You are not in this alone. As part of this course you’ll
+                        You are not in this alone. As part of this course you&apos;ll
                         be matched with a mentor from our network. Mentors are
                         hand-picked and have at least 4 years of product design
                         experience in reputable design forward companies. Learn
@@ -214,7 +214,7 @@ const LearnDesign = () => {
                         provide support and guidance throughout your course.
                     </p>
                     <p className="text-[#dad9f2]">
-                        You’ll meet with your mentor once a week in an intimate
+                        You&apos;ll meet with your mentor once a week in an intimate
                         group session to learn key design concepts, ask
                         questions, and discuss your projects. Your mentors will
                         also be available throughout the weeks via online
@@ -229,8 +229,8 @@ const LearnDesign = () => {
                 </div>
 
                 <div className="mt-[5em] flex justify-between overflow-scroll lg:overflow-hidden">
-                    {Mentors.map((mentor) => (
-                        <div className="mr-9">
+                    {Mentors.map((mentor, index) => (
+                        <div key={index} className="mr-9">
                             <Image
                                 src={mentor.img}
                                 height="10"
@@ -249,13 +249,13 @@ const LearnDesign = () => {
                 </div>
                 <div className="grid gap-4 mt-[8em]">
                     <p className="text-[#dad9f2] text-[12px] font-bold">
-                        WHAT’S INCLUDED
+                        WHAT&apos;S INCLUDED
                     </p>
                     <p className="text-3xl font-bold">
                         An immersive and interactive learning experience
                     </p>
                     <p className="text-[#dad9f2] lg:w-[47em]">
-                        Our courses are built with students’ experience in mind
+                        Our courses are built with students&apos; experience in mind
                         - proven learning principles, mentorship,
                         community-based plus a year of Dribbble Pro; unlocking
                         all the tools you need to transform your career.
@@ -270,7 +270,7 @@ const LearnDesign = () => {
                             />
                             <p className="font-bold">Expert educators</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
-                                You’ll learn from the best in the design
+                                You&apos;ll learn from the best in the design
                                 industry; join MDS and the former hiring manager
                                 at Google, for live and interactive sessions.
                             </p>
@@ -284,7 +284,7 @@ const LearnDesign = () => {
                             />
                             <p className="font-bold">Live mentorship</p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
-                                You’ll join a small group of designers for
+                                You&apos;ll join a small group of designers for
                                 weekly live & interactive mentorship sessions.
                                 All our mentors are hand picked and work at top
                                 design companies.
@@ -399,7 +399,7 @@ const LearnDesign = () => {
                         <p className="text-xl italic w-[16em] text-gray-700">
                             This is a great opportunity to work online and
                             in-depth with your design heroes. The instructors
-                            are world-class, the community is amazing, and we’re
+                            are world-class, the community is amazing, and we&apos;re
                             inspired to add to our portfolios every week.
                         </p>
                         <div className="flex gap-3 mt-8">
@@ -482,7 +482,7 @@ const LearnDesign = () => {
                             className="w-[90%] rounded-2xl"
                         />
                         <p className="text-[0.95em] lg:w-[27em] leading-relaxed">
-                            It’s time to start investing as much effort into
+                            It&apos;s time to start investing as much effort into
                             your business as you do with your creations. Editor
                             X and Dribbble are teaming up with web designer and
                             entrepreneur Brad Hussey to teach you how to land
@@ -542,10 +542,10 @@ const LearnDesign = () => {
                         />
                         <p className="text-[0.95em] lg:w-[27em] leading-relaxed mb-6">
                             Join Aaron Draplin for an interactive, virtual
-                            workshop you won’t want to miss. With two available
-                            sessions—the first tackling the DDC’s design
+                            workshop you won&apos;t want to miss. With two available
+                            sessions—the first tackling the DDC&apos;s design
                             optimization workflow and the second logo design the
-                            DDC way, you’ll have the opportunity to gain design
+                            DDC way, you&apos;ll have the opportunity to gain design
                             know-how that will help you make your creative work
                             more efficient, dialed-in, and impactful.
                         </p>
@@ -600,8 +600,8 @@ const LearnDesign = () => {
                         Have any questions?
                     </h1>
                     <p className="w-[] text-gray-700 text-md leading-relaxed">
-                        We’re here to help. Get in touch below to ask us
-                        anything about Dribbble’s course offerings
+                        We&apos;re here to help. Get in touch below to ask us
+                        anything about Dribbble&apos;s course offerings
                     </p>
 
                     <div className="grid gap-3 rounded-xl bg-slate-100 p-[2em] mt-8">
