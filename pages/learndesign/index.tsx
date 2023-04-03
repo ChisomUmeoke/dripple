@@ -230,7 +230,7 @@ const LearnDesign = () => {
 
                 <div className="mt-[5em] flex justify-between overflow-scroll lg:overflow-hidden">
                     {Mentors.map((mentor) => (
-                        <div className='mr-9'>
+                        <div className="mr-9">
                             <Image
                                 src={mentor.img}
                                 height="10"
@@ -365,7 +365,7 @@ const LearnDesign = () => {
                                 Connect with hiring companies
                             </p>
                             <p className="text-[0.8em] w-[18em] leading-relaxed">
-                                Get in front of Dribbble's vast network of
+                                Get in front of Dribbble&apos;s vast network of
                                 hiring managers who work for the most design
                                 forward companies out there.
                             </p>
@@ -390,12 +390,12 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-             <div className="grid gap-[4em] lg:ml-[5em]">
+            <div className="grid gap-[4em] lg:ml-[5em]">
                 <p className=" ml-6 lg:ml-1 font-bold text-4xl mt-[4em] ">
                     What our students are saying
                 </p>
                 <div className="grid lg:grid-cols-3 justify-center">
-                    <div className='mb-4'>
+                    <div className="mb-4">
                         <p className="text-xl italic w-[16em] text-gray-700">
                             This is a great opportunity to work online and
                             in-depth with your design heroes. The instructors
@@ -418,7 +418,7 @@ const LearnDesign = () => {
                         </div>
                     </div>
 
-                    <div className='mb-4'>
+                    <div className="mb-4">
                         <p className="text-xl italic w-[16em] text-gray-700">
                             Dribbble courses are always incredibly informative
                             for me. It was fascinating to hear from industry
@@ -463,8 +463,10 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-             <div className=" m-[1em] lg:m-[5em] grid gap-3">
-                <p className="font-bold mt-4 lg:mt-0 text-4xl">Workshops & Free Webinars</p>
+            <div className=" m-[1em] lg:m-[5em] grid gap-3">
+                <p className="font-bold mt-4 lg:mt-0 text-4xl">
+                    Workshops & Free Webinars
+                </p>
                 <p className="text-xl lg:w-[33em] text-gray-900">
                     Level up your design skills with our live and highly
                     interactive workshops —featuring must-have insights from
@@ -512,23 +514,23 @@ const LearnDesign = () => {
                             </span>
                         </div>
                         <div className="">
-                        <ul className="flex">
-                              <button
-                                type="button"
-                                className="border w-[8em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1 mr-8 h-[2.5em]"
-                            >
-                                {' '}
-                                Register Now
-                            </button>
-                            <button
-                                type="button"
-                                className="bg-pink-500 w-[8em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
-                            >
-                                {' '}
-                                Learn More
-                            </button>
-                        </ul>
-                    </div>
+                            <ul className="flex">
+                                <button
+                                    type="button"
+                                    className="border w-[8em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1 mr-8 h-[2.5em]"
+                                >
+                                    {' '}
+                                    Register Now
+                                </button>
+                                <button
+                                    type="button"
+                                    className="bg-pink-500 w-[8em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
+                                >
+                                    {' '}
+                                    Learn More
+                                </button>
+                            </ul>
+                        </div>
                     </div>
                     <div className="grid mt-4 lg:mt-0">
                         <Image
@@ -554,9 +556,10 @@ const LearnDesign = () => {
                                     height="10"
                                     width="18"
                                     alt=""
-
                                 />
-                                <p className="text-sm lg:ml-[0.24em]">Workshop</p>
+                                <p className="text-sm lg:ml-[0.24em]">
+                                    Workshop
+                                </p>
                             </span>
                             <span className="flex">
                                 <Image
@@ -571,45 +574,52 @@ const LearnDesign = () => {
                             </span>
                         </div>
                         <div className="mt-8">
-                        <ul className="flex">
-                              <button
-                                type="button"
-                                className="border w-[8em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1 mr-8 h-[2.5em]"
-                            >
-                                {' '}
-                                Register Now
-                            </button>
-                            <button
-                                type="button"
-                                className="bg-pink-500 w-[8em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
-                            >
-                                {' '}
-                                Learn More
-                            </button>
-                        </ul>
-                    </div>
+                            <ul className="flex">
+                                <button
+                                    type="button"
+                                    className="border w-[8em] border-pink-500 text-pink-500 text-sm font-medium rounded-md outline-0 p-1 mr-8 h-[2.5em]"
+                                >
+                                    {' '}
+                                    Register Now
+                                </button>
+                                <button
+                                    type="button"
+                                    className="bg-pink-500 w-[8em] border text-white  text-sm font-medium rounded-md outline-0 p-1  h-[2.5em]"
+                                >
+                                    {' '}
+                                    Learn More
+                                </button>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-             <div className="lg:flex justify-around  mt-[9em]">
-                <div className="w-[49%]">
+            <div className="lg:flex justify-around  mt-[9em] text-center">
+                <div className="lg:w-[49%]">
                     <h1 className="font-bold text-4xl mb-4">
-                    Have any questions?
+                        Have any questions?
                     </h1>
                     <p className="w-[] text-gray-700 text-md leading-relaxed">
-                    We’re here to help. Get in touch below to ask us anything about Dribbble’s course offerings
+                        We’re here to help. Get in touch below to ask us
+                        anything about Dribbble’s course offerings
                     </p>
 
-                    <div className='grid gap-3 rounded-xl bg-slate-100 p-[2em] mt-8'>
-                        <p className='font-bold text-xl'>Send us a message</p>
-                        <p className='text-gray-700 text-sm '>A Dribbble Education team member is available to answer any questions you have about the course.</p><div className="mt-4">
-                       <div><button className="bg-pink-500 w-[10em] h-[3.1em] text-sm font-bold p-1 rounded-xl text-white">
-                            Get in touch
-                        </button>
-                        <button className="bg-slate-200 w-[12em] ml-4 h-[3.1em] text-sm font-bold p-1 rounded-xl ">
-                            Speak with an Advisor
-                        </button></div>
-                    </div>
+                    <div className="grid gap-3 rounded-xl bg-slate-100 p-[2em] mt-8">
+                        <p className="font-bold text-xl">Send us a message</p>
+                        <p className="text-gray-700 text-sm ">
+                            A Dribbble Education team member is available to
+                            answer any questions you have about the course.
+                        </p>
+                        <div className="mt-4">
+                            <div>
+                                <button className="mb-[1em] lg:mb-0 bg-pink-500 w-[10em] h-[3.1em] text-sm font-bold p-1 rounded-xl text-white">
+                                    Get in touch
+                                </button>
+                                <button className="bg-slate-200 w-[12em] ml-4 h-[3.1em] text-sm font-bold p-1 rounded-xl ">
+                                    Speak with an Advisor
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="hidden lg:block">
@@ -618,7 +628,6 @@ const LearnDesign = () => {
                         width="450"
                         src="/Images/message.png"
                         alt=""
-
                     />
                 </div>
             </div>

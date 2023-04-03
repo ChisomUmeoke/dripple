@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import Template from '../../components/Template';
 
 const FindWork = () => {
@@ -67,3 +67,4 @@ const FindWork = () => {
 };
 
 export default FindWork;
+ */

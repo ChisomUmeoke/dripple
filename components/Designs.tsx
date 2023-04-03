@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 const Designs = () => {
     return (
@@ -33,3 +33,4 @@ const Designs = () => {
     );
 };
 export default Designs;
+ */

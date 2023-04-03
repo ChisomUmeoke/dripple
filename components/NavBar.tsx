@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import Link from 'next/link';
 
 import { useState } from 'react';
@@ -127,3 +127,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+ */
