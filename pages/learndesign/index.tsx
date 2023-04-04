@@ -48,10 +48,10 @@ const LearnDesign = () => {
             </div>
             <div className=" lg:flex justify-around mt-[4em]">
                 <div className="lg:w-[45%] m-8">
-                    <h1 className="font-bold  text-4xl lg:text-7xl mb-4">
+                    <h1 className="font-bold  text-3xl lg:text-4xl lg:text-7xl mb-4">
                         Learn design online with industry leaders
                     </h1>
-                    <p className="lg:w-[75%] text-gray-700 text-xl leading-relaxed">
+                    <p className="lg:w-[75%] text-gray-700 lg:text-xl leading-relaxed">
                         Ready to invest in your design career? Browse our
                         catalog of highly interactive, online design courses
                         taught by the best in the industry.
@@ -75,9 +75,9 @@ const LearnDesign = () => {
             <p className="ml-[5em] mt-[5em] text-[#4d44c6] text-[12px] font-bold">
                 CERTIFIED COURSES{' '}
             </p>
-            <div className=" mt-[4em] lg:flex justify-around grid justify-center">
+            <div className=" lg:mt-[4em] mt-[2em] lg:flex justify-around grid justify-center">
                 <div className="lg:w-[40em] m-8">
-                    <p className="w-[70%] lg:w-[12em] font-bold text-4xl lg:text-5xl mb-4">
+                    <p className="w-[70%] lg:w-[12em] font-bold text-3xl lg:text-4xl lg:text-5xl mb-4">
                         Learn Product Design in 16 weeks
                     </p>
                     <p className="lg:w-[42em]  text-[17px] leading-7">
@@ -127,7 +127,7 @@ const LearnDesign = () => {
                     />
                 </div>
             </div>
-            <div className="lg:ml-[2em] mt-[7em] lg:flex justify-around">
+            <div className="lg:ml-[2em] lg:mt-[7em] lg:flex justify-around">
                 <div className="lg:w-[35em] m-8">
                     <h1 className="font-bold text-2xl mb-[0.5em]">
                         Not sure if you&apos;re ready?
@@ -391,18 +391,18 @@ const LearnDesign = () => {
                 </div>
             </div>
             <div className="grid gap-[4em] lg:ml-[5em]">
-                <p className=" ml-6 lg:ml-1 font-bold text-4xl mt-[4em] ">
+                <p className="font-bold text-center text-3xl lg:text-4xl mt-[4em] ">
                     What our students are saying
                 </p>
-                <div className="grid lg:grid-cols-3 justify-center">
+                <div className="grid gap-7 lg:grid-cols-3 justify-center">
                     <div className="mb-4">
-                        <p className="text-xl italic w-[16em] text-gray-700">
+                        <p className="lg:text-xl italic w-[16em] text-gray-700">
                             This is a great opportunity to work online and
                             in-depth with your design heroes. The instructors
                             are world-class, the community is amazing, and we&apos;re
                             inspired to add to our portfolios every week.
                         </p>
-                        <div className="flex gap-3 mt-8">
+                        <div className="flex gap-3 lg:mt-8 mt-3">
                             <Image
                                 height="10"
                                 width="55"
@@ -419,12 +419,12 @@ const LearnDesign = () => {
                     </div>
 
                     <div className="mb-4">
-                        <p className="text-xl italic w-[16em] text-gray-700">
+                        <p className="lg:text-xl italic w-[16em] text-gray-700">
                             Dribbble courses are always incredibly informative
                             for me. It was fascinating to hear from industry
                             experts and gain insight into their experience.
                         </p>
-                        <div className="flex gap-3 mt-8">
+                        <div className="flex gap-3 lg:mt-8 mt-3">
                             <Image
                                 src="/Images/studentII.png"
                                 height="10"
@@ -440,13 +440,13 @@ const LearnDesign = () => {
                         </div>
                     </div>
                     <div>
-                        <p className="text-xl italic w-[16em] text-gray-700">
+                        <p className="lg:text-xl italic w-[16em] text-gray-700">
                             I found that the hands-on mentorship provides
                             transferrable skills, relevant advice, advanced
                             knowledge, and practical experience. This course has
                             been a valuable experience for my career.
                         </p>
-                        <div className="flex gap-3 mt-8">
+                        <div className="flex gap-3 lg:mt-8 mt-3">
                             <Image
                                 src="/Images/studentiii.png"
                                 height="10"
@@ -463,16 +463,16 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className=" m-[1em] lg:m-[5em] grid gap-3">
-                <p className="font-bold mt-4 lg:mt-0 text-4xl">
+            <div className=" m-[1em] lg:m-[5em] grid gap-3 mt-[3em] lg:mt-[0.05em]">
+                <p className="font-bold mt-4 lg:mt-9 text-3xl text-center lg:text-left lg:text-4xl">
                     Workshops & Free Webinars
                 </p>
-                <p className="text-xl lg:w-[33em] text-gray-900">
+                <p className="lg:text-xl lg:w-[33em] text-gray-900">
                     Level up your design skills with our live and highly
                     interactive workshops —featuring must-have insights from
                     your favorite design leaders
                 </p>
-                <div className="grid lg:grid-cols-2 justify-between gap-9 mt-8">
+                <div className="grid lg:grid-cols-2 lg:justify-between justify-center gap-9 mt-8">
                     <div className="grid gap-2">
                         <Image
                             src="/Images/workshop1.png"
@@ -594,9 +594,9 @@ const LearnDesign = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:flex justify-around  mt-[9em] text-center">
+            <div className="lg:flex justify-around  mt-[4em] lg:mt-[9em] text-center">
                 <div className="lg:w-[49%]">
-                    <h1 className="font-bold text-4xl mb-4">
+                    <h1 className="font-bold text-3xl lg:text-4xl mb-4">
                         Have any questions?
                     </h1>
                     <p className="w-[] text-gray-700 text-md leading-relaxed">
@@ -636,4 +636,4 @@ const LearnDesign = () => {
 };
 
 export default LearnDesign;
-export {};
+
