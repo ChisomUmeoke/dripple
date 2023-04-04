@@ -1,4 +1,14 @@
-/* import React from 'react';
+import React from "react"
+
+
+const Login = () => {
+    return (
+        <div>
+
+        </div>
+    )}
+    export default Login
+    /* import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 

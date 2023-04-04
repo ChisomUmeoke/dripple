@@ -1,4 +1,14 @@
-/* import React from 'react';
+import React from "react"
+
+
+const Register = () => {
+    return (
+        <div>
+
+        </div>
+    )}
+    export default Register
+    /* import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Dashboard from '../dashboard';

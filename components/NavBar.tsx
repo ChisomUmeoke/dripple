@@ -1,4 +1,14 @@
-/* import React from 'react';
+import React from "react"
+
+
+const NavBar = () => {
+    return (
+        <div>
+
+        </div>
+    )}
+    export default NavBar
+    /* import React from 'react';
 import Link from 'next/link';
 
 import { useState } from 'react';
