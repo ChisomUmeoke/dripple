@@ -636,3 +636,4 @@ const LearnDesign = () => {
 };
 
 export default LearnDesign;
+export {};
